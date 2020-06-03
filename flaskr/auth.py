@@ -94,6 +94,7 @@ def logout():
     session.clear()
     return redirect(url_for('index'))
 
+
 # 登录装饰器
 def login_required(view):
     @functools.wraps(view)
